@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Composite Modes</title>
+    <style>
+        canvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body onload="drawShapes()">
+    <script>
+        const compositeTypes=['source-over','source-atop','source-in','source-out','destination-over','destination-atop','destination-in','destination-out','lighter','darker','copy','xor'];
+        function drawShapes(){
+            for(let i=0;i<compositeTypes.length;i++){
+                const label=document.createTextNode(compositeTypes[i]);
+                document.getElementById('lab'+i).appendChild(label);
+                const ctx=document.getElementById('c'+i).getContext('2d');
+                ctx.fillStyle='red';
+                ctx.fillRect(15,15,70,70);
+                ctx.globalCompositeOperation=compositeTypes[i];
+                ctx.fillStyle='blue';
+                ctx.beginPath();
+                ctx.arc(75,75,35,0,Math.PI*2,true);
+                ctx.fill();
+            }
+        }
+    </script>
+    <table border="1" align="center">
+        <tbody>
+            <tr>
+                <td><canvas id="c0" width="125" height="125"></canvas>
+                <br>
+            <label id="lab0"></label>
+        </td>
+                <td><canvas id="c1" width="125" height="125"></canvas>
+                <br>
+            <label id="lab1"></label>
+        </td>
+                <td><canvas id="c2" width="125" height="125"></canvas>
+                <br>
+            <label id="lab2"></label>
+        </td>
+            </tr>
+            <tr>
+                <td><canvas id="c3" width="125" height="125"></canvas>
+                <br>
+            <label id="lab3"></label>
+        </td>
+                <td><canvas id="c4" width="125" height="125"></canvas>
+                <br>
+            <label id="lab4"></label>
+        </td>
+                <td><canvas id="c5" width="125" height="125"></canvas>
+                <br>
+            <label id="lab5"></label>
+        </td>
+            </tr>
+            <tr>
+                <td><canvas id="c6" width="125" height="125"></canvas>
+                <br>
+            <label id="lab6"></label>
+        </td>
+                <td><canvas id="c7" width="125" height="125"></canvas>
+                <br>
+            <label id="lab7"></label>
+        </td>
+                <td><canvas id="c8" width="125" height="125"></canvas>
+                <br>
+            <label id="lab8"></label>
+        </td>
+    </tr>
+    <tr>
+                <td><canvas id="c9" width="125" height="125"></canvas>
+                <br>
+            <label id="lab9"></label>
+        </td>
+                <td><canvas id="c10" width="125" height="125"></canvas>
+                <br>
+            <label id="lab10"></label>
+        </td>
+                <td><canvas id="c11" width="125" height="125"></canvas>
+                <br>
+            <label id="lab11"></label>
+        </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

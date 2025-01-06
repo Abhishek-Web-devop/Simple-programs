@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toogle Face</title>
+    <style>
+        canvas{
+            border: 1px solid black;
+        }
+        .container{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            height: 400px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="face-canvas" width="400" height="400"></canvas>
+    </div>
+    <div style="text-align: center;">
+    <button id="toogle-button" onclick="toogleFace()">ToogleFace</button>
+    </div>
+    <script>
+        var canvas=document.getElementById("face-canvas");
+        var ctx=canvas.getContext("2d");
+        var isSmiling=true;
+        drawSmilingFace();
+        function drawSmilingFace(){
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            ctx.beginPath();
+            ctx.arc(canvas.width/2,canvas.height/2,canvas.width/2,0,Math.PI*2);
+            ctx.fillStyle="yellow";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(canvas.width/3,canvas.height/3,10,0,Math.PI*2);
+            ctx.fillStyle="black";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(canvas.width*2/3,canvas.height/3,10,0,Math.PI*2);
+            ctx.fillStyle="black";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(canvas.width/2,canvas.height/2,canvas.width/3,0,Math.PI);
+            ctx.stroke();
+        }
+        function drawSadFace(){
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            ctx.beginPath();
+            ctx.arc(canvas.width/2,canvas.height/2,canvas.width/2,0,Math.PI*2);
+            ctx.fillStyle="yellow";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(canvas.width/3,canvas.height/2,10,0,Math.PI*2);
+            ctx.fillStyle="black";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(canvas.width*2/3,canvas.height/2,10,0,Math.PI*2);
+            ctx.fillStyle="black";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(canvas.width/2,canvas.height/2+canvas.width/3,canvas.width/4,Math.PI,0);
+            ctx.stroke();
+        }
+        function toogleFace(){
+            if(isSmiling){
+                drawSadFace();
+                isSmiling=false;
+            }
+            else{
+                drawSmilingFace();
+                isSmiling=true;
+            }
+        }
+    </script>
+</body>
+</html>

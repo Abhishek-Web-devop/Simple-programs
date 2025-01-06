@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <svg width="300" height="200">
+        <!--first ball-->
+        <circle id="ball1" cx="20" cy="20" r="20" fill="blue">
+            <animate attributeName="cx" from="20" to="280" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="cy" values="20;180;20" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <!--first ball-->
+        <circle id="ball2" cx="120" cy="70" r="20" fill="red">
+            <animate attributeName="cx" from="120" to="20" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="cy" values="70;20;70" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <!--first ball-->
+        <circle id="ball3" cx="250" cy="150" r="20" fill="green">
+            <animate attributeName="cx" from="250" to="50" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="cy" values="150;50;150" dur="2s" repeatCount="indefinite"/>
+        </circle>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #lightBulb{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Click to Turn on/off light bulb</h2>
+    <img id="lightBulb"src="amazon.jpg" alt="light Bulb">
+   <center><button onclick="toggleLight()">toggleLight</button></center> 
+    <script>
+        function toggleLight(){
+            var lightBulb=document.getElementById('lightBulb')
+            if(lightBulb.src.endsWith('amazon.jpg')){
+                lightBulb.src='hero.jpg';
+            }else{
+                lightBulb.src='amazon.jpg';
+            }
+        }
+    </script>
+</body>
+</html>
