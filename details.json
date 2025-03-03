@@ -1,0 +1,124 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "BookName": "The Forest of Enchantments",
+      "Author": "Chitra Banerjee Divakaruni",
+      "Price": "\u20B9369"
+    },
+    {
+      "id": 2,
+      "BookName": "The Far Field",
+      "Author": "Madhuri Vijay",
+      "Price": "\u20B9351"
+    },
+    {
+      "id": 3,
+      "BookName": "Latitudes of Longing",
+      "Author": "Shubhangi Swarup",
+      "Price": "\u20B9432"
+    },
+    {
+      "id": 4,
+      "BookName": "Paper Moon",
+      "Author": "Rehana Munir",
+      "Price": "\u20B9299"
+    },
+    {
+      "id": 5,
+      "BookName": "Adulting",
+      "Author": "Neha Sharma",
+      "Price": "\u20B9299"
+    },
+    {
+      "id": 6,
+      "BookName": "Scion of Ikshvaku",
+      "Author": "Amish Tripathi",
+      "Price": "\u20B9310"
+    },
+    {
+      "id": 7,
+      "BookName": "Journey of Two Hearts",
+      "Author": "Anuj Tiwari",
+      "Price": "\u20B9200"
+    },
+    {
+      "id": 8,
+      "BookName": "The Alchemy of Desire",
+      "Author": "Tarun Tejpal",
+      "Price": "\u20B9450"
+    },
+    {
+      "id": 9,
+      "BookName": "Mrs Funnybones",
+      "Author": "Twinkle Khanna",
+      "Price": "\u20B9250"
+    },
+    {
+      "id": 10,
+      "BookName": "Business Sutra",
+      "Author": "Devdutt Pattanaik",
+      "Price": "\u20B9550"
+    },
+    {
+      "id": 11,
+      "BookName": "The Oath of the Vayuputras",
+      "Author": "Amish Tripathi",
+      "Price": "\u20B9350"
+    },
+    {
+      "id": 12,
+      "BookName": "It Had to Be You",
+      "Author": "Anuj Tiwari",
+      "Price": "\u20B9180"
+    },
+    {
+      "id": 13,
+      "BookName": "The Success Sutra",
+      "Author": "Devdutt Pattanaik",
+      "Price": "\u20B9400"
+    },
+    {
+      "id": 14,
+      "BookName": "The Legend of Lakshmi Prasad",
+      "Author": "Twinkle Khanna",
+      "Price": "\u20B9299"
+    },
+    {
+      "id": 15,
+      "BookName": "Pyjamas Are Forgiving",
+      "Author": "Twinkle Khanna",
+      "Price": "\u20B9325"
+    },
+    {
+      "id": 16,
+      "BookName": "Sita: Warrior of Mithila",
+      "Author": "Amish Tripathi",
+      "Price": "\u20B9350"
+    },
+    {
+      "id": 17,
+      "BookName": "Raavan: Enemy of Aryavarta",
+      "Author": "Amish Tripathi",
+      "Price": "\u20B9380"
+    },
+    {
+      "id": 18,
+      "BookName": "War of Lanka",
+      "Author": "Amish Tripathi",
+      "Price": "\u20B9400"
+    },
+    {
+      "id": 19,
+      "BookName": "Legend of Suheldev",
+      "Author": "Amish Tripathi",
+      "Price": "\u20B9350"
+    },
+    {
+      "id": 20,
+      "BookName": "Immortal India",
+      "Author": "Amish Tripathi",
+      "Price": "\u20B9300"
+    }
+  ]
+}
